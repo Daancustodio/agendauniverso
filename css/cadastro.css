@@ -1,0 +1,130 @@
+
+#centrologin { 
+	margin: 0 auto !important;
+	width:240px;
+	min-height:500px;
+	padding-bottom:10px;
+	
+}
+.cadastro {
+	padding: 20px;
+	width: 180px;
+	color:#FFF;
+	background:RGBA(0,0,0,0.8);
+	border-radius:4px;
+	text-align: left;
+	margin-left:15px !important;
+	box-shadow:0 0px 15px 3px #000;
+}
+label {
+	display:block;
+	margin:3px 0 0 0;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+.bradius {
+	border-radius:4px;
+	-ms-border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+
+}
+.txt {border:1px solid #09f;
+	margin-top:1px;
+	padding:3px;
+}
+.txt:focus {
+	box-shadow:0 2px 16px #09f;
+	-ms-box-shadow:0 2px 16px #09f;
+	-moz-box-shadow:0 2px 16px #09f;
+	-o-box-shadow:0 2px 16px #09f;
+	-webkit-transition:all linear 0.5s;
+	-moz-transition:all linear 0.5s;
+	-webkit-transition:all linear 0.5s;
+	-ms-transition:all linear 0.5s;
+	-webkit-transition:all linear 0.5s;
+
+
+
+}
+.txt:hover {border:thin solid #09f;}
+.botao {
+	margin-top:10px;
+	width:110px;
+	font:Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	transition:all linear 0.3s;
+	-moz-transition:all linear 0.5s;
+	-webkit-transition:all linear 0.5s;
+	-ms-transition:all linear 0.5s;
+	-webkit-transition:all linear 0.5s;	
+
+}
+.botao:hover { 
+	cursor:pointer;
+	background:#09F;
+	color:#FFF;
+	transition:all linear 10ms;
+	-moz-transition:all linear 0.5s;
+	-webkit-transition:all linear 0.5s;
+	-ms-transition:all linear 0.5s;
+	-webkit-transition:all linear 0.5s;	
+}
+
+
+	
+span .ok {
+	width:100%;
+	min-height:40px;
+}
+	
+.flash {
+	width:100%;
+	min-height:40px;
+	background:url(images/bgok.png) repeat;
+	text-align:center;
+	line-height:40px;
+	top:0;
+	left:0;
+	color:#0F0;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+.flash1 {
+	width:100%;
+	min-height:40px;
+	background:url(images/bgcontent.png) repeat;
+	text-align:center;
+	line-height:40px;
+	top:0;
+	left:0;
+	color:#FFF;
+}
+
+.flasherro {
+	width:100%;
+	min-height:40px;
+	background: RGBA(255,0,0,0.7);
+	text-align:center;
+	line-height:40px;
+	top:0;
+	left:0;
+	color:#FFF;
+	font-size:15px;
+	
+}
+
+.flashatencao{
+	width:100%;
+	min-height:40px;
+	background:url(images/bgatencao.png) repeat;
+	text-align:center;
+	line-height:40px;
+	top:0;
+	left:0;
+	color:#FFF;
+	font-weight:bold;
+}

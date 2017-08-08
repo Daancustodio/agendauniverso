@@ -1,0 +1,150 @@
+body {
+	background-color:#ddd;
+}
+.dcMenuDropdown {
+	list-style: none;
+}
+.dcsubmenu{
+	max-width: 10px;
+}
+.tamanhoMinimo{
+	min-width: 700px;
+}
+.dcDivCenter {
+	margin: 0 auto;
+	max-width: 180px;
+	min-width: 100px;
+}
+
+.divEditar{
+	min-width: 770px;
+}
+.dcDivCenter a {
+	color: #FFF;
+	text-decoration: none;
+}
+.dcLinkNulo a {
+	color: #FFF;
+	text-decoration: none;
+}
+.dchoje{
+	background-color: rgba(0,255,0,1) !important;
+}
+.dcinfo{
+	text-align: center;
+	background: #000;
+}
+.dcadm{
+	text-align: center;
+}
+.ajuste{
+	margin: 0 auto;
+	min-width: 220px;
+	width: 220px;
+	height: 265px;
+	min-height: 265px;
+	padding: 5px;
+	border-radius: 8px;
+
+	
+}
+.dcNav{
+	box-shadow: 0 1px 3px #000;
+	margin-top: 5px;
+	border-radius: 3px;
+
+}
+.dcNavInner{
+	padding-top: 3px;
+}
+.insert {
+	min-width: 220px;
+	width: 220px;
+	height: 290px;
+	min-height: 290px;
+	padding: 10px 20px 5px 20px;
+	border-radius: 8px;
+	margin: 50px auto auto auto  ;
+	box-shadow: 0 1px 5px #000;
+}
+.dcinput {
+	box-shadow:  inset 0 1px 1px #000 !important;
+	border-radius: 10px !important;
+	 
+
+}
+.dcbnt {
+	box-shadow: 0 1px 3px #000;
+	border-radius: 10px !important;
+	
+}
+.control-group{
+	margin-right: 50px;
+}
+
+.row-fluid{
+	margin-bottom: 5px;
+}
+.inicial{
+	margin: 0 auto;
+	min-width: 325px;
+	
+	text-align: right;
+	padding:10px 0 10px 0;
+	padding: 3px;
+	margin-top: 10px;
+	
+	border-radius: 10px;
+}
+.bg{
+	background: #C1CDCD;
+	text-align: center;
+	width: 100%;
+}
+.bgPos{
+	background: #4f798c url(img/pattern1.png) repeat;
+	color: #FFF;
+	box-shadow: 0 2px 5px #000;
+}
+.bgPos h1 small{
+	color: #FFF !important;
+
+}
+
+.bgPos tr:hover{
+	color: #000;
+}
+.bgPos  tr:hover th{
+	color: #FFF;
+}
+.spann3{
+	min-width: 335px;
+	padding: 3px;
+}
+.spann4{
+	padding: 3px;
+	min-width: 340px;
+}
+.aprovar{
+	padding: 3px;
+	min-width: 383px;
+
+}
+.bradius{
+	border-radius: 5px;
+}
+.margin {
+	margin-top: 5px;
+}
+.mini {
+	width: 15px;
+}
+
+.btn-sair{
+	float: right;
+	height: 32px;
+	padding-top: 3px;
+}
+.dcTxtPreto{
+	color: #000 !important;
+}

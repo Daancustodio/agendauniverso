@@ -1,0 +1,94 @@
+
+#header {
+	background: RGBA(255,255,255,0.6);
+	margin:10px auto 15px auto;
+	padding-top:30px;
+	padding-bottom:5px;
+	padding-left:5px;
+	border-radius:5px;
+	box-shadow:#f1f1f1 0 0 10px ;
+	
+}
+.dicas{
+	left:5px;
+	top:210px;
+	width:10px;
+	height:10px;
+	position:fixed;
+}
+
+.logo {
+	
+	overflow: hidden;
+	text-shadow: 1px 1px 0px #188FB9;
+	text-transform: uppercase;
+}
+
+.logo h1 {
+	margin: 0em;
+	letter-spacing: -.1em;
+	text-decoration: none;
+	font-size: 4em;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.logo p {
+	padding: 0em 0em 0em .5em;
+	font-size: 1em;
+	color: #BDF2FF;
+}
+p {
+	line-height: 170%;
+	font-size: 10px;
+}
+.menu ul {
+	margin-left:-40px;
+
+
+}
+.menu ul li a{
+	display:block;
+	padding: 1em 1.5em;
+	
+}
+.menu ul li  {
+	
+	float:left;
+	list-style:none;
+	text-decoration:none;
+	list-style:none;
+	margin-right: 0.12em;
+	background:#178EAE;
+	box-shadow: inset 0px -2px 0px 0px rgba(0,0,0,0.25);
+	text-decoration: none;
+	text-shadow: 1px 1px 0px #0C749C;
+	text-transform: uppercase;
+	font-size: .90em;
+	color:#fff;
+	border-radius:3px;
+	text-align:center;
+}
+
+.menu  ul li:hover {
+	background:#FFF;
+	box-shadow: inset 0px -2px 0px 0px rgba(0,0,0,1);
+	text-shadow: 0px 0px 0px #0C749C;
+
+	color:#0C2256;
+	
+}
+
+.menu  ul li:hover a{
+	color:#0C2256;
+
+}
+a {
+	
+	text-decoration:none;
+	color:#FFF;
+}
+a:hover {color:#000;}
+
+.disponivel {color:#228B22;}
+.cancelar {color:#FF8C00;}

@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.0
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: 08-Ago-2017 às 20:02
--- Versão do servidor: 10.1.25-MariaDB
--- PHP Version: 7.1.7
+-- Host: 127.0.0.1:3306
+-- Tempo de geração: 06-Dez-2023 às 15:42
+-- Versão do servidor: 5.7.40
+-- versão do PHP: 7.4.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `a4745563_audio`
+-- Banco de dados: `a4745563_audio`
 --
 
 -- --------------------------------------------------------
@@ -28,7 +27,8 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `501d`
 --
 
-CREATE TABLE `501d` (
+DROP TABLE IF EXISTS `501d`;
+CREATE TABLE IF NOT EXISTS `501d` (
   `horario1` varchar(50) NOT NULL,
   `horario2` varchar(50) NOT NULL,
   `horario3` varchar(50) NOT NULL,
@@ -42,8 +42,16 @@ CREATE TABLE `501d` (
   `horario11` varchar(50) NOT NULL,
   `data` varchar(30) NOT NULL,
   `status` varchar(30) NOT NULL,
-  `id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `501d`
+--
+
+INSERT INTO `501d` (`horario1`, `horario2`, `horario3`, `horario4`, `horario5`, `horario6`, `horario7`, `horario8`, `horario9`, `horario10`, `horario11`, `data`, `status`, `id`) VALUES
+('2daniel', ' ', '', '', '', '', '', '', '', '', '', '06/12/2023', '', 1);
 
 -- --------------------------------------------------------
 
@@ -51,22 +59,31 @@ CREATE TABLE `501d` (
 -- Estrutura da tabela `502d`
 --
 
-CREATE TABLE `502d` (
-  `horario1` varchar(50) NOT NULL,
-  `horario2` varchar(50) NOT NULL,
-  `horario3` varchar(50) NOT NULL,
-  `horario4` varchar(50) NOT NULL,
-  `horario5` varchar(50) NOT NULL,
-  `horario6` varchar(50) NOT NULL,
-  `horario7` varchar(50) NOT NULL,
-  `horario8` varchar(50) NOT NULL,
-  `horario9` varchar(50) NOT NULL,
-  `horario10` varchar(50) NOT NULL,
-  `horario11` varchar(50) NOT NULL,
-  `data` varchar(30) NOT NULL,
-  `status` varchar(20) NOT NULL,
-  `id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+DROP TABLE IF EXISTS `502d`;
+CREATE TABLE IF NOT EXISTS `502d` (
+  `horario1` varchar(50) NOT NULL DEFAULT ' ',
+  `horario2` varchar(50) NOT NULL DEFAULT ' ',
+  `horario3` varchar(50) NOT NULL DEFAULT ' ',
+  `horario4` varchar(50) NOT NULL DEFAULT ' ',
+  `horario5` varchar(50) NOT NULL DEFAULT ' ',
+  `horario6` varchar(50) NOT NULL DEFAULT ' ',
+  `horario7` varchar(50) NOT NULL DEFAULT ' ',
+  `horario8` varchar(50) NOT NULL DEFAULT ' ',
+  `horario9` varchar(50) NOT NULL DEFAULT ' ',
+  `horario10` varchar(50) NOT NULL DEFAULT ' ',
+  `horario11` varchar(50) NOT NULL DEFAULT ' ',
+  `data` varchar(30) NOT NULL DEFAULT ' ',
+  `status` varchar(20) NOT NULL DEFAULT ' ',
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `502d`
+--
+
+INSERT INTO `502d` (`horario1`, `horario2`, `horario3`, `horario4`, `horario5`, `horario6`, `horario7`, `horario8`, `horario9`, `horario10`, `horario11`, `data`, `status`, `id`) VALUES
+(' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '06/12/2023', ' ', 1);
 
 -- --------------------------------------------------------
 
@@ -74,7 +91,8 @@ CREATE TABLE `502d` (
 -- Estrutura da tabela `503d`
 --
 
-CREATE TABLE `503d` (
+DROP TABLE IF EXISTS `503d`;
+CREATE TABLE IF NOT EXISTS `503d` (
   `horario1` varchar(50) NOT NULL,
   `horario2` varchar(50) NOT NULL,
   `horario3` varchar(50) NOT NULL,
@@ -88,8 +106,16 @@ CREATE TABLE `503d` (
   `horario11` varchar(50) NOT NULL,
   `data` varchar(30) NOT NULL,
   `status` varchar(20) NOT NULL,
-  `id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `503d`
+--
+
+INSERT INTO `503d` (`horario1`, `horario2`, `horario3`, `horario4`, `horario5`, `horario6`, `horario7`, `horario8`, `horario9`, `horario10`, `horario11`, `data`, `status`, `id`) VALUES
+('', '', ' ', '', '', '', '', '', '', '', '', '06/12/2023', '', 1);
 
 -- --------------------------------------------------------
 
@@ -97,7 +123,8 @@ CREATE TABLE `503d` (
 -- Estrutura da tabela `504d`
 --
 
-CREATE TABLE `504d` (
+DROP TABLE IF EXISTS `504d`;
+CREATE TABLE IF NOT EXISTS `504d` (
   `horario1` varchar(50) NOT NULL,
   `horario2` varchar(50) NOT NULL,
   `horario3` varchar(50) NOT NULL,
@@ -111,8 +138,16 @@ CREATE TABLE `504d` (
   `horario11` varchar(50) NOT NULL,
   `data` varchar(30) NOT NULL,
   `status` varchar(20) NOT NULL,
-  `id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `504d`
+--
+
+INSERT INTO `504d` (`horario1`, `horario2`, `horario3`, `horario4`, `horario5`, `horario6`, `horario7`, `horario8`, `horario9`, `horario10`, `horario11`, `data`, `status`, `id`) VALUES
+('', '', '', '', '2daniel', '', '', '', '', '', '', '06/12/2023', '', 1);
 
 -- --------------------------------------------------------
 
@@ -120,7 +155,8 @@ CREATE TABLE `504d` (
 -- Estrutura da tabela `505d`
 --
 
-CREATE TABLE `505d` (
+DROP TABLE IF EXISTS `505d`;
+CREATE TABLE IF NOT EXISTS `505d` (
   `horario1` varchar(50) NOT NULL,
   `horario2` varchar(50) NOT NULL,
   `horario3` varchar(50) NOT NULL,
@@ -134,8 +170,16 @@ CREATE TABLE `505d` (
   `horario11` varchar(50) NOT NULL,
   `data` varchar(30) NOT NULL,
   `status` varchar(20) NOT NULL,
-  `id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `505d`
+--
+
+INSERT INTO `505d` (`horario1`, `horario2`, `horario3`, `horario4`, `horario5`, `horario6`, `horario7`, `horario8`, `horario9`, `horario10`, `horario11`, `data`, `status`, `id`) VALUES
+('2daniel', '', '', '', '', '', '', '', '', '', '', '06/12/2023', '', 1);
 
 -- --------------------------------------------------------
 
@@ -143,7 +187,8 @@ CREATE TABLE `505d` (
 -- Estrutura da tabela `506d`
 --
 
-CREATE TABLE `506d` (
+DROP TABLE IF EXISTS `506d`;
+CREATE TABLE IF NOT EXISTS `506d` (
   `horario1` varchar(50) NOT NULL,
   `horario2` varchar(50) NOT NULL,
   `horario3` varchar(50) NOT NULL,
@@ -157,8 +202,16 @@ CREATE TABLE `506d` (
   `horario11` varchar(50) NOT NULL,
   `data` varchar(30) NOT NULL,
   `status` varchar(20) NOT NULL,
-  `id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `506d`
+--
+
+INSERT INTO `506d` (`horario1`, `horario2`, `horario3`, `horario4`, `horario5`, `horario6`, `horario7`, `horario8`, `horario9`, `horario10`, `horario11`, `data`, `status`, `id`) VALUES
+('', '', '', '', '', '', '', '', '', '', '', '06/12/2023', '', 1);
 
 -- --------------------------------------------------------
 
@@ -166,7 +219,8 @@ CREATE TABLE `506d` (
 -- Estrutura da tabela `507d`
 --
 
-CREATE TABLE `507d` (
+DROP TABLE IF EXISTS `507d`;
+CREATE TABLE IF NOT EXISTS `507d` (
   `horario1` varchar(50) NOT NULL,
   `horario2` varchar(50) NOT NULL,
   `horario3` varchar(50) NOT NULL,
@@ -180,8 +234,16 @@ CREATE TABLE `507d` (
   `horario11` varchar(50) NOT NULL,
   `data` varchar(30) NOT NULL,
   `status` varchar(20) NOT NULL,
-  `id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `507d`
+--
+
+INSERT INTO `507d` (`horario1`, `horario2`, `horario3`, `horario4`, `horario5`, `horario6`, `horario7`, `horario8`, `horario9`, `horario10`, `horario11`, `data`, `status`, `id`) VALUES
+('', '', '', '', '', '', '', '', '', '', '', '06/12/2023', '', 1);
 
 -- --------------------------------------------------------
 
@@ -189,7 +251,8 @@ CREATE TABLE `507d` (
 -- Estrutura da tabela `508d`
 --
 
-CREATE TABLE `508d` (
+DROP TABLE IF EXISTS `508d`;
+CREATE TABLE IF NOT EXISTS `508d` (
   `horario1` varchar(50) NOT NULL,
   `horario2` varchar(50) NOT NULL,
   `horario3` varchar(50) NOT NULL,
@@ -203,8 +266,16 @@ CREATE TABLE `508d` (
   `horario11` varchar(50) NOT NULL,
   `data` varchar(30) NOT NULL,
   `status` varchar(20) NOT NULL,
-  `id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `508d`
+--
+
+INSERT INTO `508d` (`horario1`, `horario2`, `horario3`, `horario4`, `horario5`, `horario6`, `horario7`, `horario8`, `horario9`, `horario10`, `horario11`, `data`, `status`, `id`) VALUES
+('', '', '', '', '', '', '2daniel', '', '', '', '', '06/12/2023', '', 1);
 
 -- --------------------------------------------------------
 
@@ -212,17 +283,26 @@ CREATE TABLE `508d` (
 -- Estrutura da tabela `cadastro_professores`
 --
 
-CREATE TABLE `cadastro_professores` (
+DROP TABLE IF EXISTS `cadastro_professores`;
+CREATE TABLE IF NOT EXISTS `cadastro_professores` (
   `nome` varchar(100) NOT NULL,
   `sobrenome` varchar(100) NOT NULL,
   `matricula` varchar(20) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `senha` varchar(30) NOT NULL,
+  `senha` varchar(40) NOT NULL,
   `telefone` varchar(20) NOT NULL,
   `status` varchar(20) NOT NULL,
-  `nivel` int(1) NOT NULL,
-  `id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `nivel` int(1) DEFAULT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `cadastro_professores`
+--
+
+INSERT INTO `cadastro_professores` (`nome`, `sobrenome`, `matricula`, `email`, `senha`, `telefone`, `status`, `nivel`, `id`) VALUES
+('daniel', 'custodio', '102030', 'srdaniiel@gmail.com', '162b7d2193327cda15487a3a8fdf989ad08349e0', '62985581643', 'aprovado', NULL, 2);
 
 -- --------------------------------------------------------
 
@@ -230,7 +310,8 @@ CREATE TABLE `cadastro_professores` (
 -- Estrutura da tabela `eventos`
 --
 
-CREATE TABLE `eventos` (
+DROP TABLE IF EXISTS `eventos`;
+CREATE TABLE IF NOT EXISTS `eventos` (
   `data` varchar(30) NOT NULL,
   `periodo` varchar(20) NOT NULL,
   `inicio` varchar(30) NOT NULL,
@@ -241,7 +322,8 @@ CREATE TABLE `eventos` (
   `descricao` varchar(500) NOT NULL,
   `usuario` varchar(30) NOT NULL,
   `dia` varchar(30) NOT NULL,
-  `id` int(11) NOT NULL
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -250,7 +332,8 @@ CREATE TABLE `eventos` (
 -- Estrutura da tabela `posgraduacao`
 --
 
-CREATE TABLE `posgraduacao` (
+DROP TABLE IF EXISTS `posgraduacao`;
+CREATE TABLE IF NOT EXISTS `posgraduacao` (
   `data` varchar(30) NOT NULL,
   `periodo` varchar(20) NOT NULL,
   `inicio` varchar(30) NOT NULL,
@@ -263,125 +346,7 @@ CREATE TABLE `posgraduacao` (
   `dia` varchar(30) NOT NULL,
   `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `501d`
---
-ALTER TABLE `501d`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `502d`
---
-ALTER TABLE `502d`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `503d`
---
-ALTER TABLE `503d`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `504d`
---
-ALTER TABLE `504d`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `505d`
---
-ALTER TABLE `505d`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `506d`
---
-ALTER TABLE `506d`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `507d`
---
-ALTER TABLE `507d`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `508d`
---
-ALTER TABLE `508d`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `cadastro_professores`
---
-ALTER TABLE `cadastro_professores`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `eventos`
---
-ALTER TABLE `eventos`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `501d`
---
-ALTER TABLE `501d`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `502d`
---
-ALTER TABLE `502d`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `503d`
---
-ALTER TABLE `503d`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `504d`
---
-ALTER TABLE `504d`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `505d`
---
-ALTER TABLE `505d`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `506d`
---
-ALTER TABLE `506d`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `507d`
---
-ALTER TABLE `507d`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
---
--- AUTO_INCREMENT for table `508d`
---
-ALTER TABLE `508d`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `cadastro_professores`
---
-ALTER TABLE `cadastro_professores`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `eventos`
---
-ALTER TABLE `eventos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;COMMIT;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

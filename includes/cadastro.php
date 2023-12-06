@@ -9,16 +9,11 @@
 	$confirmarsenha = addslashes(sha1($_POST["confirmarsenha"]));
 	$telefone = $_POST['telefone'];
 	$senhaRetorno = $_POST['senha'];
-	
-
-	
-	
-	
-	
-	
+		
 	//inserção no banco de dados
 	$i = mysqli_query($con, "SELECT * FROM cadastro_professores WHERE email = '$email'");
 	mysqli_num_rows($i);
+	
 	//confirmar senha
 	if ($senha == $confirmarsenha){
 		// confirmar email
@@ -28,24 +23,7 @@
 			 '$senha',
 			 '$telefone', 'avaliar')");
 			 
-// retornar dados do usuário por email
-
-mail("$email",
-"Dados Cadastrados",
-"
-Nome: $nome \n 
-Sobrenome: $sobrenome \n
-Telefone: $telefone \n
-Usuário: $email \n
-Senha : $senhaRetorno \n\n
-
-Att: 
-Audio Visual Goiânia
-tel: (62) 3238-3028
- 
-","From: Audio Visual <audiovisual@go.universo.edu.br>"
-);
-//Fim retorno email				
+			var_dump(mysqli_error($con));
 			 }
 			else{
 				$flash= '<div class="msg"><div class="flasherro">'."Desculpe, Mas já existe um usuário com este email cadastrado em nosso sistema.".'
@@ -53,7 +31,7 @@ tel: (62) 3238-3028
 				</div>
 				';
 			}
-			if (isset($insert)){
+			if ($insert){
 				$flash= '<div class="msg"><div class="flash">'."Cadastro Realizado com Sucesso, Em instantes você recebera um Email de confirmação contendo todos os seus dados!".'</div> </div>';
 			} else{
 				if($flash == ""){
@@ -69,6 +47,22 @@ tel: (62) 3238-3028
 		$flash= '<div class="msg"><div class="flasherro">'."As senhas digitadas não conferem! retorne e tente novamente".'</div> </div>';
 	}// fim validação de senha
 
+	function enviaEmail(){
+		mail("$email",
+			"Dados Cadastrados",
+			"
+			Nome: $nome \n 
+			Sobrenome: $sobrenome \n
+			Telefone: $telefone \n
+			Usuário: $email \n
+			Senha : $senhaRetorno \n\n
+
+			Att: 
+			Audio Visual Goiânia
+			tel: (62) 3238-3028
+			
+			");
+	}
 ?>
 	
 

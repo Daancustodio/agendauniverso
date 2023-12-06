@@ -2,7 +2,7 @@
 	$data = $_GET['data'];
 	$horario = $_GET['horario'];
 	$sala = $_GET['sala'];
-	$sql = mysqli_query($con "UPDATE $sala SET  $horario = ' ' WHERE data = '$data'");
+	$sql = mysqli_query($con, "UPDATE $sala SET  $horario = ' ' WHERE data = '$data'");
 	
 	$flash = "Cancelamento efetuado com sucesso sala: $sala, Data: $data";
 			

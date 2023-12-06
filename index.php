@@ -1,5 +1,6 @@
 <?php
 include("conexao.php");
+include("validar.php");
 session_start();
 
 ?>

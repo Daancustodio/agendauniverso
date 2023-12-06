@@ -1,7 +1,7 @@
 <?php
 	  	$host ="localhost";
-		$user ="audio";
-		$pass ="audio";
+		$user ="root";
+		$pass ="";
 		$dbname ="a4745563_audio";
 		
 		$con = mysqli_connect($host, $user, $pass, $dbname);

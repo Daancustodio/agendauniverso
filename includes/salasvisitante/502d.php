@@ -1,6 +1,7 @@
 <?php 
 			$sql = mysqli_query ($con,"SELECT * FROM 502d WHERE data = '$data' "); 
             $ln = mysqli_fetch_array($sql, MYSQLI_BOTH);
+			if($ln == null) return;
 			$ln1 = $ln['horario1'];
 			$ln2 = $ln['horario2'];
 			$ln3 = $ln['horario3'];

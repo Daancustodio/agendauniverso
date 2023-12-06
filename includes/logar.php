@@ -5,8 +5,7 @@
 	$senha = $_POST['senha'];
 	$email = addslashes(strtolower($email));
 	$senha = addslashes(sha1($senha));
-	$senha = substr ($senha,0,30);
-
+	
 	
 	
 	$sql = mysqli_query ($con,"SELECT * FROM cadastro_professores WHERE email = '$email' AND senha='$senha' ");
